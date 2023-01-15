@@ -14,6 +14,7 @@ const siteMetadata = {
   github: 'https://github.com/yugasun',
   linkedin: 'https://www.linkedin.com/in/yugasun/',
   locale: 'zh-CN',
+  beian: '京ICP备17023009号-1', // 域名备案号
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -22,6 +23,7 @@ const siteMetadata = {
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: 'UA-85991013-1', // e.g. UA-000000-2 or G-XXXXXXX
+    baiduAnalyticsId: '28d4aea1680535e760d13d954b54eddc', // e.g. 28d4xxx
     posthogAnalyticsId: '', // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
   },
   newsletter: {

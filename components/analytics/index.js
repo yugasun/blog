@@ -1,4 +1,5 @@
-import GA from './GoogleAnalytics'
+import GoogleAnalytics from './GoogleAnalytics'
+import BaiduAnalytics from './BaiduAnalytics'
 import Plausible from './Plausible'
 import SimpleAnalytics from './SimpleAnalytics'
 import Umami from './Umami'
@@ -13,7 +14,8 @@ const Analytics = () => {
       {isProduction && siteMetadata.analytics.plausibleDataDomain && <Plausible />}
       {isProduction && siteMetadata.analytics.simpleAnalytics && <SimpleAnalytics />}
       {isProduction && siteMetadata.analytics.umamiWebsiteId && <Umami />}
-      {isProduction && siteMetadata.analytics.googleAnalyticsId && <GA />}
+      {isProduction && siteMetadata.analytics.googleAnalyticsId && <GoogleAnalytics />}
+      {isProduction && siteMetadata.analytics.baiduAnalyticsId && <BaiduAnalytics />}
       {isProduction && siteMetadata.analytics.posthogAnalyticsId && <Posthog />}
     </>
   )

@@ -63,7 +63,14 @@ const Giscus = () => {
 
   return (
     <div className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300">
-      {enableLoadComments && <button onClick={LoadComments}>加载评论</button>}
+      {enableLoadComments && (
+        <button
+          className="text-base font-medium leading-6 border rounded-lg p-2 border-primary-500 text-primary-500 hover:text-primary-600 hover:border-primary-600 dark:hover:text-primary-400 dark:hover:border-primary-400"
+          onClick={LoadComments}
+        >
+          加载评论
+        </button>
+      )}
       <div className="giscus" id={COMMENTS_ID} />
     </div>
   )
