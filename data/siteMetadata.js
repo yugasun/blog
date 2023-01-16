@@ -22,7 +22,7 @@ const siteMetadata = {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: 'UA-85991013-1', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-ZWCY7V55PC', // e.g. UA-000000-2 or G-XXXXXXX
     baiduAnalyticsId: '28d4aea1680535e760d13d954b54eddc', // e.g. 28d4xxx
     posthogAnalyticsId: '', // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
   },
