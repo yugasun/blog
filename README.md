@@ -14,7 +14,7 @@ I wanted it to be nearly as feature-rich as popular blogging templates like [bea
 
 ## Features
 
-- Easy styling customization with [Tailwind 3.0](https://tailwindcss.com/blog/tailwindcss-v3) and primary color attribute
+- Easy styling customization with [Tailwind 3.0](https://tailwindcss.com) and primary color attribute
 - Near perfect lighthouse score - [Lighthouse report](https://www.webpagetest.org/result/221104_AiDc59_4WF/)
 - Lightweight, 45kB first load JS, uses Preact in production build
 - Mobile-friendly view
@@ -86,7 +86,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 `data/logo.svg` - replace with your own logo.
 
-`data/blog` - replace with your own blog posts.
+`data/post` - replace with your own blog posts.
 
 `public/static` - store assets such as images and favicons.
 
@@ -138,7 +138,7 @@ summary: 'Looking for a performant, out of the box template, with all the best i
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default', 'sparrowhawk']
 layout: PostLayout
-canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog
+canonicalUrl: https://blog.yugasun/post/serverless-advise
 ---
 ```
 
@@ -165,7 +165,6 @@ The API routes used in the newsletter component cannot be used in a static site 
 
 **Google App Engine**
 Apart from changes mentioned above for `next/image`, configurations should be changed based on recommendations [here](https://github.com/vercel/next.js/discussions/12474#discussioncomment-17844) in order to set up the project for GAE deployment.
-
 
 ## Licence
 
