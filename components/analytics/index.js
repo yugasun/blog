@@ -1,3 +1,4 @@
+import { Analytics as VercelAnalytics } from '@vercel/analytics/react'
 import GoogleAnalytics from './GoogleAnalytics'
 import BaiduAnalytics from './BaiduAnalytics'
 import Plausible from './Plausible'
@@ -11,6 +12,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 const Analytics = () => {
   return (
     <>
+      {isProduction && siteMetadata.analytics.enableVercelAnalytics && <VercelAnalytics />}
       {isProduction && siteMetadata.analytics.plausibleDataDomain && <Plausible />}
       {isProduction && siteMetadata.analytics.simpleAnalytics && <SimpleAnalytics />}
       {isProduction && siteMetadata.analytics.umamiWebsiteId && <Umami />}
