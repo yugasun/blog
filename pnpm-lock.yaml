@@ -8,6 +8,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.3
   '@tailwindcss/typography': ^0.5.9
   '@vercel/analytics': ^1.0.1
+  '@vercel/edge': ^0.3.4
   autoprefixer: ^10.4.14
   cross-env: ^7.0.3
   dayjs: ^1.11.7
@@ -60,6 +61,7 @@ dependencies:
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.3.2
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.3.2
   '@vercel/analytics': 1.0.1
+  '@vercel/edge': 0.3.4
   dayjs: 1.11.7
   esbuild: 0.17.19
   github-slugger: 1.5.0
@@ -2264,6 +2266,10 @@ packages:
 
   /@vercel/analytics/1.0.1:
     resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
+    dev: false
+
+  /@vercel/edge/0.3.4:
+    resolution: {integrity: sha512-dFU+yAUDQRwpuRGxRDlEO1LMq0y1LGsBgkyryQWe4w15/Fy2/lCnpvdIoAhHl3QvIGAxCLHzwRHsqfLRdpxgJQ==}
     dev: false
 
   /@webassemblyjs/ast/1.11.6:
