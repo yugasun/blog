@@ -14,7 +14,7 @@ const siteMetadata = {
   github: 'https://github.com/yugasun',
   linkedin: 'https://www.linkedin.com/in/yugasun/',
   locale: 'zh-CN',
-  beian: '京ICP备17023009号-1', // 域名备案号
+  beian: '京ICP备17023009号', // 域名备案号
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.

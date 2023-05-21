@@ -3,6 +3,8 @@ import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+import { mermaid } from '@/lib/utils/mermaid'
+import { useEffect } from 'react'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -42,6 +44,16 @@ export async function getStaticProps({ params }) {
 
 export default function Post({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
+
+  useEffect(() => {
+    try {
+      mermaid.run({
+        querySelector: '.language-mermaid',
+      })
+    } catch {
+      // noop
+    }
+  }, [])
 
   return (
     <>

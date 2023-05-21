@@ -12,6 +12,9 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
+import { mermaid } from '@/lib/utils/mermaid'
+import { useEffect } from 'react'
+
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 

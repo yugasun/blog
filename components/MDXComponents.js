@@ -5,9 +5,11 @@ import Image from './Image'
 import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
+import { Mermaid } from './Mermaid'
 import { BlogNewsletterForm } from './NewsletterForm'
 
 export const MDXComponents = {
+  Mermaid,
   Image,
   TOCInline,
   a: CustomLink,
