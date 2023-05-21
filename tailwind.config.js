@@ -60,7 +60,7 @@ module.exports = {
               color: theme('colors.gray.900'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.400'),
+              backgroundColor: theme('colors.gray.600'),
             },
             code: {
               color: theme('colors.pink.500'),

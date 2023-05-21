@@ -99,8 +99,14 @@ graph LR; A[用户] --> |Prompt| B(ChatGPT); B --> C{生成}; C --> |SQL查询| 
 
 - 图片宽度：`800`
 - 图片高度：`480`
-- 文本（Prompt）：`(((best quality))),single build,architecture, blue\_sky, building,cloudy\_sky, day, fantasy, fence, field, house, build,architecture,landscape, moss, outdoors, overgrown, path, river, road, rock, scenery, sky, sword, tower, tree, waterfall , \<lora:Pyramid lora\_Ghibli\_v2:1>`
-- 反向描述内容(Negative prompt): `easynegative, ng_deepnegative_v1_75t,{{{{bad_construction}}}},{bad_structure},bad_wail,{{{bad_windows}}},{blurry},cloned_window,cropped,{{{deformed}}},{{{disfigured}}},error,{{{extra_windows}}},{extra_chimney},{{{extra_door}}},extra_structure,{{extra_frame}},{fewer_digits},{fused_structure},gross_proportions,jpeg_artifacts,{{{{long_roof}}}},low_quality,{structure_limbs},{{missing_windows}},{missing_doors},{{missing_roofs}},mutated_structure,{{{mutation}}},normal_quality,out_of_frame,owres,{{poorly_drawn_structure}},{{poorly_drawn_house}},signature,text,{{too_many_windows}},{{{ugly}}},username,uta,watermark,worst_quality`
+- 文本（Prompt）：
+  ```text
+  (((best quality))),single build,architecture, blue\_sky, building,cloudy\_sky, day, fantasy, fence, field, house, build,architecture,landscape, moss, outdoors, overgrown, path, river, road, rock, scenery, sky, sword, tower, tree, waterfall , \<lora:Pyramid lora\_Ghibli\_v2:1>
+  ```
+- 反向描述内容(Negative prompt):
+  ```text
+  easynegative, ng_deepnegative_v1_75t,{{{{bad_construction}}}},{bad_structure},bad_wail,{{{bad_windows}}},{blurry},cloned_window,cropped,{{{deformed}}},{{{disfigured}}},error,{{{extra_windows}}},{extra_chimney},{{{extra_door}}},extra_structure,{{extra_frame}},{fewer_digits},{fused_structure},gross_proportions,jpeg_artifacts,{{{{long_roof}}}},low_quality,{structure_limbs},{{missing_windows}},{missing_doors},{{missing_roofs}},mutated_structure,{{{mutation}}},normal_quality,out_of_frame,owres,{{poorly_drawn_structure}},{{poorly_drawn_house}},signature,text,{{too_many_windows}},{{{ugly}}},username,uta,watermark,worst_quality
+  ```
 
 # 4. 总结
 

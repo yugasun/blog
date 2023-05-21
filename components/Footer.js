@@ -5,7 +5,7 @@ import SocialIcon from '@/components/social-icons'
 export default function Footer() {
   return (
     <footer>
-      <div className="mt-16 flex flex-col items-center">
+      <div className="mt-6 sm:mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />
           <SocialIcon kind="github" href={siteMetadata.github} size="6" />
@@ -19,8 +19,10 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
-          <div>{` • `}</div>
+          <Link className="hidden sm:block" href="/">
+            {siteMetadata.title}
+          </Link>
+          <div className="hidden sm:block">{` • `}</div>
           {siteMetadata.beian && (
             <Link href="https://beian.miit.gov.cn/">{siteMetadata.beian}</Link>
           )}
